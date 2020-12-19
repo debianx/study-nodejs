@@ -11,6 +11,6 @@ jobs:
             npm install --save
 
 workflows:
-  node-tests:
+  build-tests:
     jobs:
-      - node/test
+      - run_tests
