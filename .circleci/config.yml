@@ -4,11 +4,12 @@ jobs:
     docker:
       - image: circleci/node:10
     steps:
-      -checkout
-      run:
-        name: Install npm dependencies
-        command: npm install --save
-        
+      - checkout
+      - run:
+          name: Install npm dependencies
+          command: |
+            npm install --save
+
 workflows:
   node-tests:
     jobs:
