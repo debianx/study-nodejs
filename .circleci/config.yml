@@ -10,8 +10,3 @@ jobs:
           name: Install npm dependencies
           command: |
             npm install --save
-
-      - run:
-          name: Teste unitario
-          command: |
-            yarn test
